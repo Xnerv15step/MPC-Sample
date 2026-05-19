@@ -1,0 +1,83 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.controls-group {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(30, 10, 45, 0.1);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.controls-group--transport {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls-group--transport > button {
+  flex: 1;
+}
+
+.controls-group label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgba(30, 10, 45, 0.66);
+  margin-bottom: 8px;
+}
+
+.controls-group input[type='range'] {
+  width: 100%;
+}
+
+.controls-value {
+  font-family: var(--font-8bit);
+  font-size: 11px;
+  color: rgba(30, 10, 45, 0.8);
+}
+
+.btn-play,
+.btn-stop,
+.btn-clear,
+.btn-kit,
+.btn-export {
+  font-family: var(--font-8bit);
+  font-size: 11px;
+  border-radius: 12px;
+  border: 1px solid rgba(30, 10, 45, 0.14);
+  background: linear-gradient(180deg, #ffffff, #fff0f8);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: transform 70ms ease, box-shadow 120ms ease;
+}
+
+.btn-play:hover,
+.btn-stop:hover,
+.btn-clear:hover,
+.btn-kit:hover,
+.btn-export:hover {
+  box-shadow: 0 10px 18px rgba(20, 10, 35, 0.12);
+}
+
+.btn-play:disabled,
+.btn-stop:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-play {
+  border-color: rgba(49, 255, 215, 0.55);
+}
+
+.btn-stop {
+  border-color: rgba(255, 94, 168, 0.55);
+}
+
+.btn-kit.is-active {
+  background: linear-gradient(180deg, rgba(255, 94, 168, 0.22), rgba(255, 94, 168, 0.06));
+  border-color: rgba(255, 94, 168, 0.5);
+}

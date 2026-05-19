@@ -1,0 +1,21 @@
+.pad-bank {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pad-row {
+  display: grid;
+  grid-template-columns: 18px repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: center;
+}
+
+.row-label {
+  font-family: var(--font-8bit);
+  font-size: 10px;
+  color: rgba(30, 10, 45, 0.55);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 0.08em;
+}
