@@ -1,3 +1,4 @@
+<img width="2474" height="4116" alt="localhost_5173_" src="https://github.com/user-attachments/assets/01a2b277-f7e9-43ca-8cdf-f7543cf38821" />
 # 🎛️ MPC Sample
 
 > 一個運行在瀏覽器的迷你取樣機 / 節拍製作器
