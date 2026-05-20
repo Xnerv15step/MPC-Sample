@@ -1,5 +1,6 @@
 <!-- src/components/DrumPad.vue -->
 <template>
+  <!-- 鼓墊元件，負責顯示單個鼓墊並處理點擊事件 -->
   <div :data-key="pad.key" class="drum-pad" :class="{ active: isActive }" @click="handleTrigger">
     {{ pad.label }}
   </div>

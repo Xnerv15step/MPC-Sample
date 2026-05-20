@@ -55,6 +55,7 @@
 // 按鍵、BPM、音量、套件選擇等控制元件
 import '../assets/components/Controls.css'
 
+// 定義組件的 props 和 emits，這些 props 包含了控制元件需要的狀態和數據，而 emits 定義了組件會觸發的事件，這些事件會被父組件（App.vue）監聽並處理。
 defineProps({
   isPlaying: { type: Boolean, required: true },
   bpm: { type: Number, required: true },
@@ -63,5 +64,6 @@ defineProps({
   currentKitId: { type: String, required: true },
 })
 
+// 定義組件會觸發的事件，這些事件包括 play、stop、clear、setBpm、setVolume、switchKit 和 export，這些事件會在用戶與控制元件交互時被觸發，並由父組件來處理相應的邏輯。
 const emit = defineEmits(['play', 'stop', 'clear', 'setBpm', 'setVolume', 'switchKit', 'export'])
 </script>

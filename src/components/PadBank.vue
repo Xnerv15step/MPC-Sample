@@ -1,9 +1,10 @@
 <!-- src/components/PadBank.vue -->
- <!-- 鼓墊元件，負責顯示整個鼓墊界面並處理鍵盤輸入 -->
+<!-- 鼓墊元件，負責顯示整個鼓墊界面並處理鍵盤輸入 -->
 <template>
   <div id="pad-bank" class="pad-bank">
     <div v-for="row in kit.rows" :key="row.label" class="pad-row">
       <span class="row-label">{{ row.label }}</span>
+      <!-- 為每個鼓墊創建一個 DrumPad 組件，並傳遞 pad 資料和觸發事件的處理函數 -->
       <DrumPad
         v-for="pad in row.pads"
         :key="pad.id"
